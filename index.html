@@ -144,17 +144,40 @@
     </div>
 
     <!-- Player Twitch Embed -->
-    <iframe
-     src="https://player.twitch.tv/?channel=lunaticaela&parent=lulu1002.github.io"
-     height="480"
-     width="720"
-     allowfullscreen>
-   </iframe>
-    <iframe
-    src="https://www.twitch.tv/embed/lunaticaela/chat?parent=lulu1002.github.io"
-    height="480"
-    width="350">
-  </iframe>
+    <style>
+   .twitch-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      max-width: 100%;
+    }
+
+    iframe {
+      border: none;
+      max-width: 100%;
+    }
+
+    .player {
+      width: 720px;
+      height: 480px;
+    }
+
+    .chat {
+      width: 350px;
+      height: 480px;
+    }
+
+    @media (max-width: 1100px) {
+      .player, .chat {
+        width: 100%;
+      }
+    }
+  </style>
+<body>
 
     <footer>
       © 2025 Lunaticaela – Todos os direitos reservados
