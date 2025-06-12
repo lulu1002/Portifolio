@@ -27,9 +27,6 @@
       h1 {
         color: #ffc1e3;
       }
-      p {
-        color: #f8bbd0;
-      }
       .profile-img {
         border-color: var(--accent-dark);
       }
@@ -46,9 +43,6 @@
       h1 {
         color: #d63384;
       }
-      p {
-        color: #6d2e4b;
-      }
       .profile-img {
         border-color: var(--accent-light);
       }
@@ -64,7 +58,7 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 2rem;
       text-align: center;
@@ -110,6 +104,15 @@
       transform: scale(1.05);
     }
 
+    iframe {
+      width: 100%;
+      height: 480px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 2rem;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+    }
+
     footer {
       margin-top: 3rem;
       font-size: 0.9rem;
@@ -132,12 +135,20 @@
     <img src="foto.jpeg" alt="Lunaticaela" class="profile-img">
     <h1>Lunaticaela</h1>
     <p>Streamer & Criadora de Conteúdo 🌸<br>Sempre conectada, sempre criativa!</p>
+    
     <div class="links">
       <a href="https://www.twitch.tv/lunaticaela" target="_blank">🎮 Twitch</a>
       <a href="https://discord.com/invite/ZUt5Vxjvmq" target="_blank">💬 Discord</a>
       <a href="https://www.instagram.com/elamicaelaa/" target="_blank">📸 Instagram</a>
       <a href="https://livepix.gg/lunaticaela" target="_blank">🎁 LivePix</a>
     </div>
+
+    <!-- Player Twitch Embed -->
+    <iframe
+      src="https://player.twitch.tv/?channel=lunaticaela&parent=https://lulu1002.github.io/Portifolio"
+      allowfullscreen>
+    </iframe>
+
     <footer>
       © 2025 Lunaticaela – Todos os direitos reservados
     </footer>
